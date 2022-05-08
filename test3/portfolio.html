@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Portfolio test</title>
+    <style>
+        * {
+
+            margin: 0;
+            padding: 0;
+
+        }
+
+        li,
+        a,
+        button {
+            font-weight: 500;
+            font-size: 16px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .nav-link {
+            list-style: none;
+        }
+
+        .nav-link li {
+            display: inline-block;
+            padding: 0px 20px;
+
+        }
+
+        .nav-link li a {
+            transition: all 0.3s ease 0s;
+        }
+
+        .nav-link li a:hover {
+            color: #0088a9
+        }
+
+        header {
+            width: 1011px;
+            display: flex;
+            background-color: black;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px 10%;
+            position: fixed;
+            top: 0px;
+
+
+        }
+
+
+
+        button {
+            color: black;
+            background-color: aqua;
+            padding: 9px 25px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease 0s;
+        }
+
+        button:hover {
+            background-color: azure;
+            padding: 35px;
+        }
+
+        /* flex conccept  */
+        .section1 {
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-around;
+            padding: 30px;
+        }
+
+        .item1 {
+            height: 500px;
+            width: 400px;
+            margin-left: 50px;
+        }
+
+        .item2 {
+            width: 400px;
+            height: 400px;
+            margin-right: 50px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+
+        }
+
+        h3 {
+            color: aqua;
+            margin-bottom: 5px;
+
+        }
+
+        #sof {
+
+            margin-top: 0px;
+        }
+
+        #dev {
+            color: aqua;
+        }
+
+        p {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .section1 .item2 button {
+            background-color: #fa6e59;
+            color: #2d454f;
+            border-radius: 30px;
+        }
+
+
+        #section2 {
+            height: 700px;
+            background-color: whitesmoke;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-around;
+            padding: 30px;
+        }
+
+        #item3 {
+            height: 500px;
+            width: 350px;
+
+        }
+
+        #man {
+            height: 500px;
+            width: 350px;
+        }
+
+        #item4 {
+            height: 300px;
+            width: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 20px;
+
+        }
+
+        h2 {
+            margin-bottom: 0;
+
+        }
+
+        #p2 {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        #p3 {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        #item5 {
+            width: 150px;
+            padding-top: 30px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .circle {
+            height: 30px;
+            width: 30px;
+            background-color: black;
+            border-radius: 50%;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+        }
+
+        #section3 {
+            height: 700px;
+            background-color: rgba(0, 0, 0, 0.1);
+            align-items: center;
+        }
+
+        #item6 {
+            height: 100px;
+            text-align: center;
+            padding-top: 20px;
+
+
+        }
+
+
+
+        #item7 {
+            height: 550px;
+            margin-top: 10px;
+
+
+        }
+
+        /* extera css */
+        .container {
+            height: 250px;
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 20px;
+
+
+        }
+
+        .design {
+            width: 200px;
+            height: 250px;
+            text-align: center;
+            background-color: white;
+        }
+
+        .split {
+            width: 200px;
+            height: 50px;
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+
+        #section4 {
+            height: 500px;
+            background-image: url(https://img.freepik.com/free-vector/big-data-orange-wave-visualization-futuristic-infographic-information-aesthetic-design-visual-data-complexity-complex-business-chart-analytics-social-network-representation-abstract-data-graph_1217-4867.jpg?t=st=1651988856~exp=1651989456~hmac=87ed3b0d1a52227e702fec979d0ea0dd4831011e22228f5fd4260086be033ec7&w=1060);
+            background-position: center;
+            background-size: cover;
+            text-align: center;
+
+        }
+
+
+
+        #Hcamera {
+            color: white;
+            margin-top: 200px;
+        }
+
+        #Pcamera {
+            color: white;
+        }
+
+        #blursec4 {
+            height: 500px;
+            text-align: center;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+        }
+
+        #overlay {
+            height: 500px;
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+
+        #blursec4 button {
+            background-color: aquamarine;
+            width: 15%;
+            text-align: center;
+            margin-left: 43%;
+            padding: 10px;
+            border-radius: 25px;
+        }
+
+
+
+        /* section5 css */
+        #section5 {
+            height: 700px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        #client1 {
+            width: 600px;
+            text-align: center;
+
+        }
+
+        #client2 {
+            width: 600px;
+            text-align: center;
+
+
+
+        }
+
+        #client2 img {
+            height: 300px;
+            width: 300px;
+        }
+
+        /* grid conccept  start */
+        #section6 {
+            height: 700px;
+
+            background-color: whitesmoke;
+        }
+
+        #workphone {
+            height: 550px;
+            margin-top: 10px;
+
+        }
+
+        #ph {
+            height: 230px;
+
+            padding: 20px;
+            display: grid;
+            grid-template-rows: repeat(2, 30%);
+            grid-template-columns: repeat(3, 30%);
+        }
+
+        #ph img {
+            height: 230px;
+            width: 300px;
+            margin-left: 90px;
+        }
+
+        #section7 {
+            height: 700px;
+            background-color: black;
+
+        }
+
+        #item9 {
+
+            height: 100px;
+            text-align: center;
+            padding-top: 20px;
+
+        }
+
+        #blog {
+            color: whitesmoke;
+        }
+
+        #p5 {
+            color: whitesmoke
+        }
+
+        #texmg {
+            height: 500px;
+
+            margin-top: 10px;
+            padding: 40px;
+            display: grid;
+            grid-template-columns: repeat(3, 35%);
+
+
+        }
+
+        .phonetext {
+            height: 490px;
+            width: 300px;
+            background-color: white;
+            text-align: left;
+            margin-left: 23px;
+
+        }
+
+        .handpho {
+            height: 200px;
+            width: 300px;
+
+        }
+
+
+
+
+        #section8 {
+            height: 700px;
+
+            background-color: whitesmoke;
+        }
+
+        #details {
+            height: 250px;
+
+            display: grid;
+
+            grid-template-columns: repeat(3, 35%);
+
+        }
+
+        .pheo {
+            height: 150px;
+            width: 300px;
+
+            text-align: center;
+            margin-top: 50px;
+            margin-left: 35px;
+            background-color: blanchedalmond;
+
+            /* form conccept  */
+
+        }
+
+        .frm {
+            height: 300px;
+
+            margin-top: 5px;
+            text-align: center;
+
+        }
+
+        form {
+
+            height: 180px;
+            padding: 30px;
+
+            margin-top: 50px;
+        }
+
+        .frm form button {
+            background-color: #f09393;
+            border-radius: 25px;
+            color: #6c5e5e;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <svg xmlns="http://www.w3.org/2000/svg" width="184.136" height="46.36" viewBox="0 0 184.136 46.36">
+            <g id="Logo" transform="translate(-258.98 -51.39)" style="isolation: isolate">
+                <path id="Layer_14" data-name="Layer 14"
+                    d="M282.16,97.75a23.108,23.108,0,1,1,9.023-1.822A23.034,23.034,0,0,1,282.16,97.75Zm0-33.3A10.12,10.12,0,1,0,292.28,74.57,10.132,10.132,0,0,0,282.16,64.45Z"
+                    fill="#3dcfd3" />
+                <text id="Creative" transform="translate(383.116 84.301)" fill="#fff" font-size="28"
+                    font-family="Poppins-Regular, Poppins">
+                    <tspan x="-59.248" y="0">Creative</tspan>
+                </text>
+            </g>
+        </svg>
+        <nav>
+            <ul class="nav-link">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="#">WORK</a></li>
+                <li><a href="#">BLOG</a></li>
+            </ul>
+        </nav>
+        <a class="btn" href="#"><button>CONTACT</button></a>
+    </header>
+    <div class="section1">
+        <img class="item1"
+            src="https://img.freepik.com/free-vector/programmer-concept-illustration_114360-2923.jpg?t=st=1651988053~exp=1651988653~hmac=bfb534fbca49976f7c62d76aec7a2501d0647d79b1efc9ad8e09e3630a201a96&w=740">
+        <div class="item2">
+            <h3>Mukesh Kumar Paswan</h3>
+            <h1 id="sof">I'm Software </h1>
+            <h1 id="dev">Developer</h1>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis, officia voluptatum. Aspernatur
+                officia, et explicabo possimus deleniti harum quia obcaecati omnis repellat adipisci quos tempore
+                sapiente consequuntur blanditiis labore non fugiat assumenda iusto eligendi illo esse molestiae. Facere
+                delectus quod reiciendis magnam, harum fuga laboriosam veritatis quae, officiis perferendis tempora.
+            </p>
+            <button>DOWNLOAD CV</button>
+        </div>
+    </div>
+    <!-- page 2 -->
+    <div id="section2">
+        <div id="item3">
+            <img id="man" src="https://img.freepik.com/free-photo/young-programmers_236854-21690.jpg?w=900">
+
+        </div>
+
+        <div id="item4">
+
+            <h2>About<span style="color:aqua">Me</span></h2>
+            <p id="p2"><b>Hello I'm Mukesh Kumar Paswan</b></p>
+            <p id="p3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore tempora qui laboriosam
+                atque harum
+                quibusdamtenetur laudantium asperiores dolorum dignissimos dolorem quasi? Laudantium
+                minima, magni nulla quam molestiae pariatur tempore?
+                Placeat ipsa laborum animi eum ducimus eaque cupiditate, vero, facilis voluptatum, asperiores quae
+                vitae. Dolorum soluta eos minima at iusto vitae!</p>
+            <div id="item5">
+                <div class="circle">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="30" viewBox="0 0 26 30">
+                        <text id="_" data-name="" transform="translate(13 26)" fill="#fff" font-size="30"
+                            font-family="FontAwesome">
+                            <tspan x="-12.857" y="0"></tspan>
+                        </text>
+                    </svg>
+
+                </div>
+                <div class="circle">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="30" viewBox="0 0 26 30">
+                        <text id="_" data-name="" transform="translate(13 26)" fill="#fff" font-size="30"
+                            font-family="FontAwesome">
+                            <tspan x="-12.857" y="0"></tspan>
+                        </text>
+                    </svg>
+
+                </div>
+                <div class="circle">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="30" viewBox="0 0 26 30">
+                        <text id="_" data-name="" transform="translate(13 26)" fill="#fff" font-size="30"
+                            font-family="FontAwesome">
+                            <tspan x="-12.857" y="0"></tspan>
+                        </text>
+                    </svg>
+
+                </div>
+                <div class="circle">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="30" viewBox="0 0 26 30">
+                        <text id="_" data-name="" transform="translate(13 26)" fill="#fff" font-size="30"
+                            font-family="FontAwesome">
+                            <tspan x="-12.857" y="0"></tspan>
+                        </text>
+                    </svg>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- page 3 -->
+    <div id="section3">
+        <div id="item6">
+            <h2 id="os">
+                <span style="color:aqua">Our</span>&nbsp;Services
+            </h2>
+            <p id="p4">we provide high standar clean webside for your business solutions</p>
+        </div>
+        <div id="item7">
+            <div class="container">
+                <div class="design">
+                    <div class="split">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="110"
+                            height="107" viewBox="0 0 110 107">
+                            <g id="Group_4" data-name="Group 4" transform="translate(-785 -2297)">
+                                <image id="Layer_62" data-name="Layer 62" width="110" height="107"
+                                    transform="translate(785 2297)"
+                                    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAG4AAABrCAYAAACWlrdIAAAAAXNSR0IArs4c6QAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAbqADAAQAAAABAAAAawAAAAC8D7TzAAAB0klEQVR4Ae3TsU0DQRgFYcBuwUVQBG24DnJSaIbcLTglIKAIF2H+za4Ef7o5aa07R7Mzes9vP79P87zOOa2Xnoc3cBvCv+P8fM75eHjcALcGvl7m67z9p3fCwHmFOxCoQW4NHFa4HtBA4cBoC7lwhUMNoNgtrnCoARS7xRUONYBit7jCoQZQ7BZXONQAit3iCocaQLFbXOFQAyh2iyscagDFbnGFQw2g2C2ucKgBFLvFFQ41gGK3uMKhBlDsFlc41ACK3eIKhxpAsVtc4VADKHaLKxxqAMVucYVDDaDYLa5wqAEUu8UVDjWAYre4wqEGUOwWVzjUAIrd4gqHGkCxW1zhUAModosrHGoAxW5xhUMNoNgtrnCoARS7xRUONYBit7jCoQZQ7BZXONQAit3iCocaQLFbXOFQAyh2iyscagDFbnGFQw2g2C2ucKgBFLvFFQ41gGK3uMKhBlDsFlc41ACK3eIKhxpAsVtc4VADKHaLKxxqAMVucYVDDaDYLa5wqAEUu8UVDjWAYre4wqEGUOwWVzjUAIrd4gqHGkCxW1zhUAModosrHGoAxW5xhUMNoNhrcXeUfc/Y9xXusmcD6N0vxwF/n/M954ReYm/Yt7nw9R8v1A039nVCJwAAAABJRU5ErkJggg==" />
+                                <g id="Group_3" data-name="Group 3">
+                                    <text id="_" data-name="" transform="translate(840.371 2368.908)" fill="#070606"
+                                        font-size="50" font-family="FontAwesome">
+                                        <tspan x="-26.786" y="0"></tspan>
+                                    </text>
+                                </g>
+                            </g>
+                        </svg>
+                        <p><b>Graphic Design</b></p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente vero pariatur omnis
+                            !
+                        </p>
+                    </div>
+
+                </div>
+                <!-- item2 -->
+                <div class="design">
+                    <div class="split">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="110"
+                            height="107" viewBox="0 0 110 107">
+                            <g id="Group_4" data-name="Group 4" transform="translate(-785 -2297)">
+                                <image id="Layer_62" data-name="Layer 62" width="110" height="107"
+                                    transform="translate(785 2297)"
+                                    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAG4AAABrCAYAAACWlrdIAAAAAXNSR0IArs4c6QAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAbqADAAQAAAABAAAAawAAAAC8D7TzAAAB0klEQVR4Ae3TsU0DQRgFYcBuwUVQBG24DnJSaIbcLTglIKAIF2H+za4Ef7o5aa07R7Mzes9vP79P87zOOa2Xnoc3cBvCv+P8fM75eHjcALcGvl7m67z9p3fCwHmFOxCoQW4NHFa4HtBA4cBoC7lwhUMNoNgtrnCoARS7xRUONYBit7jCoQZQ7BZXONQAit3iCocaQLFbXOFQAyh2iyscagDFbnGFQw2g2C2ucKgBFLvFFQ41gGK3uMKhBlDsFlc41ACK3eIKhxpAsVtc4VADKHaLKxxqAMVucYVDDaDYLa5wqAEUu8UVDjWAYre4wqEGUOwWVzjUAIrd4gqHGkCxW1zhUAModosrHGoAxW5xhUMNoNgtrnCoARS7xRUONYBit7jCoQZQ7BZXONQAit3iCocaQLFbXOFQAyh2iyscagDFbnGFQw2g2C2ucKgBFLvFFQ41gGK3uMKhBlDsFlc41ACK3eIKhxpAsVtc4VADKHaLKxxqAMVucYVDDaDYLa5wqAEUu8UVDjWAYre4wqEGUOwWVzjUAIrd4gqHGkCxW1zhUAModosrHGoAxW5xhUMNoNhrcXeUfc/Y9xXusmcD6N0vxwF/n/M954ReYm/Yt7nw9R8v1A039nVCJwAAAABJRU5ErkJggg==" />
+                                <g id="Group_3" data-name="Group 3">
+                                    <text id="_" data-name="" transform="translate(840.371 2368.908)" fill="#070606"
+                                        font-size="50" font-family="FontAwesome">
+                                        <tspan x="-26.786" y="0"></tspan>
+                                    </text>
+                                </g>
+                            </g>
+                        </svg>
+                        <p><b>Graphic Design</b></p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, obcaecati.
+                        </p>
+                    </div>
+                </div>
+                <!-- item3 -->
+                <div class="design">
+                    <div class="split">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="110"
+                            height="107" viewBox="0 0 110 107">
+                            <g id="Group_4" data-name="Group 4" transform="translate(-785 -2297)">
+                                <image id="Layer_62" data-name="Layer 62" width="110" height="107"
+                                    transform="translate(785 2297)"
+                                    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAG4AAABrCAYAAACWlrdIAAAAAXNSR0IArs4c6QAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAbqADAAQAAAABAAAAawAAAAC8D7TzAAAB0klEQVR4Ae3TsU0DQRgFYcBuwUVQBG24DnJSaIbcLTglIKAIF2H+za4Ef7o5aa07R7Mzes9vP79P87zOOa2Xnoc3cBvCv+P8fM75eHjcALcGvl7m67z9p3fCwHmFOxCoQW4NHFa4HtBA4cBoC7lwhUMNoNgtrnCoARS7xRUONYBit7jCoQZQ7BZXONQAit3iCocaQLFbXOFQAyh2iyscagDFbnGFQw2g2C2ucKgBFLvFFQ41gGK3uMKhBlDsFlc41ACK3eIKhxpAsVtc4VADKHaLKxxqAMVucYVDDaDYLa5wqAEUu8UVDjWAYre4wqEGUOwWVzjUAIrd4gqHGkCxW1zhUAModosrHGoAxW5xhUMNoNgtrnCoARS7xRUONYBit7jCoQZQ7BZXONQAit3iCocaQLFbXOFQAyh2iyscagDFbnGFQw2g2C2ucKgBFLvFFQ41gGK3uMKhBlDsFlc41ACK3eIKhxpAsVtc4VADKHaLKxxqAMVucYVDDaDYLa5wqAEUu8UVDjWAYre4wqEGUOwWVzjUAIrd4gqHGkCxW1zhUAModosrHGoAxW5xhUMNoNhrcXeUfc/Y9xXusmcD6N0vxwF/n/M954ReYm/Yt7nw9R8v1A039nVCJwAAAABJRU5ErkJggg==" />
+                                <g id="Group_3" data-name="Group 3">
+                                    <text id="_" data-name="" transform="translate(840.371 2368.908)" fill="#070606"
+                                        font-size="50" font-family="FontAwesome">
+                                        <tspan x="-26.786" y="0"></tspan>
+                                    </text>
+                                </g>
+                            </g>
+                        </svg>
+                        <p><b>Graphic Design</b></p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, sequi?
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="container">
+                <div class="design">
+                    <div class="split">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="110"
+                            height="107" viewBox="0 0 110 107">
+                            <g id="Group_4" data-name="Group 4" transform="translate(-785 -2297)">
+                                <image id="Layer_62" data-name="Layer 62" width="110" height="107"
+                                    transform="translate(785 2297)"
+                                    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAG4AAABrCAYAAACWlrdIAAAAAXNSR0IArs4c6QAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAbqADAAQAAAABAAAAawAAAAC8D7TzAAAB0klEQVR4Ae3TsU0DQRgFYcBuwUVQBG24DnJSaIbcLTglIKAIF2H+za4Ef7o5aa07R7Mzes9vP79P87zOOa2Xnoc3cBvCv+P8fM75eHjcALcGvl7m67z9p3fCwHmFOxCoQW4NHFa4HtBA4cBoC7lwhUMNoNgtrnCoARS7xRUONYBit7jCoQZQ7BZXONQAit3iCocaQLFbXOFQAyh2iyscagDFbnGFQw2g2C2ucKgBFLvFFQ41gGK3uMKhBlDsFlc41ACK3eIKhxpAsVtc4VADKHaLKxxqAMVucYVDDaDYLa5wqAEUu8UVDjWAYre4wqEGUOwWVzjUAIrd4gqHGkCxW1zhUAModosrHGoAxW5xhUMNoNgtrnCoARS7xRUONYBit7jCoQZQ7BZXONQAit3iCocaQLFbXOFQAyh2iyscagDFbnGFQw2g2C2ucKgBFLvFFQ41gGK3uMKhBlDsFlc41ACK3eIKhxpAsVtc4VADKHaLKxxqAMVucYVDDaDYLa5wqAEUu8UVDjWAYre4wqEGUOwWVzjUAIrd4gqHGkCxW1zhUAModosrHGoAxW5xhUMNoNhrcXeUfc/Y9xXusmcD6N0vxwF/n/M954ReYm/Yt7nw9R8v1A039nVCJwAAAABJRU5ErkJggg==" />
+                                <g id="Group_3" data-name="Group 3">
+                                    <text id="_" data-name="" transform="translate(840.371 2368.908)" fill="#070606"
+                                        font-size="50" font-family="FontAwesome">
+                                        <tspan x="-26.786" y="0"></tspan>
+                                    </text>
+                                </g>
+                            </g>
+                        </svg>
+                        <p><b>Graphic Design</b></p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, deleniti!
+                        </p>
+                    </div>
+
+                </div>
+                <!-- item2 -->
+                <div class="design">
+                    <div class="split">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="110"
+                            height="107" viewBox="0 0 110 107">
+                            <g id="Group_4" data-name="Group 4" transform="translate(-785 -2297)">
+                                <image id="Layer_62" data-name="Layer 62" width="110" height="107"
+                                    transform="translate(785 2297)"
+                                    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAG4AAABrCAYAAACWlrdIAAAAAXNSR0IArs4c6QAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAbqADAAQAAAABAAAAawAAAAC8D7TzAAAB0klEQVR4Ae3TsU0DQRgFYcBuwUVQBG24DnJSaIbcLTglIKAIF2H+za4Ef7o5aa07R7Mzes9vP79P87zOOa2Xnoc3cBvCv+P8fM75eHjcALcGvl7m67z9p3fCwHmFOxCoQW4NHFa4HtBA4cBoC7lwhUMNoNgtrnCoARS7xRUONYBit7jCoQZQ7BZXONQAit3iCocaQLFbXOFQAyh2iyscagDFbnGFQw2g2C2ucKgBFLvFFQ41gGK3uMKhBlDsFlc41ACK3eIKhxpAsVtc4VADKHaLKxxqAMVucYVDDaDYLa5wqAEUu8UVDjWAYre4wqEGUOwWVzjUAIrd4gqHGkCxW1zhUAModosrHGoAxW5xhUMNoNgtrnCoARS7xRUONYBit7jCoQZQ7BZXONQAit3iCocaQLFbXOFQAyh2iyscagDFbnGFQw2g2C2ucKgBFLvFFQ41gGK3uMKhBlDsFlc41ACK3eIKhxpAsVtc4VADKHaLKxxqAMVucYVDDaDYLa5wqAEUu8UVDjWAYre4wqEGUOwWVzjUAIrd4gqHGkCxW1zhUAModosrHGoAxW5xhUMNoNhrcXeUfc/Y9xXusmcD6N0vxwF/n/M954ReYm/Yt7nw9R8v1A039nVCJwAAAABJRU5ErkJggg==" />
+                                <g id="Group_3" data-name="Group 3">
+                                    <text id="_" data-name="" transform="translate(840.371 2368.908)" fill="#070606"
+                                        font-size="50" font-family="FontAwesome">
+                                        <tspan x="-26.786" y="0"></tspan>
+                                    </text>
+                                </g>
+                            </g>
+                        </svg>
+                        <p><b>Graphic Design</b></p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, est!
+                        </p>
+                    </div>
+                </div>
+                <!-- item3 -->
+                <div class="design">
+                    <div class="split">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="110"
+                            height="107" viewBox="0 0 110 107">
+                            <g id="Group_4" data-name="Group 4" transform="translate(-785 -2297)">
+                                <image id="Layer_62" data-name="Layer 62" width="110" height="107"
+                                    transform="translate(785 2297)"
+                                    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAG4AAABrCAYAAACWlrdIAAAAAXNSR0IArs4c6QAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAbqADAAQAAAABAAAAawAAAAC8D7TzAAAB0klEQVR4Ae3TsU0DQRgFYcBuwUVQBG24DnJSaIbcLTglIKAIF2H+za4Ef7o5aa07R7Mzes9vP79P87zOOa2Xnoc3cBvCv+P8fM75eHjcALcGvl7m67z9p3fCwHmFOxCoQW4NHFa4HtBA4cBoC7lwhUMNoNgtrnCoARS7xRUONYBit7jCoQZQ7BZXONQAit3iCocaQLFbXOFQAyh2iyscagDFbnGFQw2g2C2ucKgBFLvFFQ41gGK3uMKhBlDsFlc41ACK3eIKhxpAsVtc4VADKHaLKxxqAMVucYVDDaDYLa5wqAEUu8UVDjWAYre4wqEGUOwWVzjUAIrd4gqHGkCxW1zhUAModosrHGoAxW5xhUMNoNgtrnCoARS7xRUONYBit7jCoQZQ7BZXONQAit3iCocaQLFbXOFQAyh2iyscagDFbnGFQw2g2C2ucKgBFLvFFQ41gGK3uMKhBlDsFlc41ACK3eIKhxpAsVtc4VADKHaLKxxqAMVucYVDDaDYLa5wqAEUu8UVDjWAYre4wqEGUOwWVzjUAIrd4gqHGkCxW1zhUAModosrHGoAxW5xhUMNoNhrcXeUfc/Y9xXusmcD6N0vxwF/n/M954ReYm/Yt7nw9R8v1A039nVCJwAAAABJRU5ErkJggg==" />
+                                <g id="Group_3" data-name="Group 3">
+                                    <text id="_" data-name="" transform="translate(840.371 2368.908)" fill="#070606"
+                                        font-size="50" font-family="FontAwesome">
+                                        <tspan x="-26.786" y="0"></tspan>
+                                    </text>
+                                </g>
+                            </g>
+                        </svg>
+                        <p><b>Graphic Design</b></p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, esse.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- page 4 -->
+
+    <div id="section4">
+        <div id="overlay">
+            <div id="blursec4">
+                <h1>I Am Available For Freelancer.</h1>
+                <p>we provide high standar clean webside for your business solutions</p>
+                <button>DOWNLOAD CV</button>
+
+            </div>
+        </div>
+    </div>
+    <!-- page 5 -->
+    <div id="section5">
+        <div id="client1">
+            <h2><span style="color:aqua">our</span>&nbsp;Client</h2>
+            <p id="p4">we provide high standar clean webside for your business solutions</p>
+
+        </div>
+        <div id="client2">
+            <img
+                src="https://img.freepik.com/free-vector/big-data-programming-abstract-concept-illustration_335657-5124.jpg?t=st=1651988856~exp=1651989456~hmac=e361a61ff394232ec2e9892a92e65e946b37c03eaee03f03df1285a9a4f02ecd&w=740">
+            <p>"Duils aute irure dolor in reprehenderit it voluptate velit esse cillum dolore eu fugial nulla .
+                Excepteur
+                sint occacat cupidatet non proident , sunt in culpa quit official deserunt mollit id est labourum"</p>
+            <span><b>-john Doel, Company ABC</b></span>
+        </div>
+
+    </div>
+    <!-- page 6 -->
+    <div id="section6">
+        <div id="item6">
+            <h2 id="os">
+                <span style="color:aqua">Our</span>&nbsp;Works
+            </h2>
+            <p id="p4">we provide high standar clean webside for your business solutions</p>
+        </div>
+        <div id="workphone">
+            <div id="ph">
+                <!-- first part -->
+                <img
+                    src="https://img.freepik.com/free-vector/programmers-concept-with-flat-design_23-2147856685.jpg?t=st=1651989555~exp=1651990155~hmac=f59f20e8f1430d8eb54548b48000baa55f5e18cdfe59b7f880d412b1770a5695&w=740">
+
+
+
+                <img
+                    src="https://img.freepik.com/free-vector/programmers-concept-with-flat-design_23-2147856685.jpg?t=st=1651989555~exp=1651990155~hmac=f59f20e8f1430d8eb54548b48000baa55f5e18cdfe59b7f880d412b1770a5695&w=740">
+
+
+                <img
+                    src="https://img.freepik.com/free-vector/programmers-concept-with-flat-design_23-2147856685.jpg?t=st=1651989555~exp=1651990155~hmac=f59f20e8f1430d8eb54548b48000baa55f5e18cdfe59b7f880d412b1770a5695&w=740">
+            </div>
+            <!-- second part -->
+            <div id="ph">
+                <img
+                    src="https://img.freepik.com/free-vector/programmers-concept-with-flat-design_23-2147856685.jpg?t=st=1651989555~exp=1651990155~hmac=f59f20e8f1430d8eb54548b48000baa55f5e18cdfe59b7f880d412b1770a5695&w=740">
+
+
+
+                <img
+                    src="https://img.freepik.com/free-vector/programmers-concept-with-flat-design_23-2147856685.jpg?t=st=1651989555~exp=1651990155~hmac=f59f20e8f1430d8eb54548b48000baa55f5e18cdfe59b7f880d412b1770a5695&w=740">
+
+
+                <img
+                    src="https://img.freepik.com/free-vector/programmers-concept-with-flat-design_23-2147856685.jpg?t=st=1651989555~exp=1651990155~hmac=f59f20e8f1430d8eb54548b48000baa55f5e18cdfe59b7f880d412b1770a5695&w=740">
+            </div>
+        </div>
+
+    </div>
+    <!-- page7 -->
+    <div id="section7">
+        <div id="item9">
+            <h2 id="blog">
+                <span style="color:aqua">Our</span>&nbsp;Blog
+            </h2>
+            <p id="p5">we provide high standar clean webside for your business solutions</p>
+            <div id="texmg">
+                <!-- first part -->
+                <div class="phonetext">
+                    <img class="handpho"
+                        src="https://img.freepik.com/free-vector/brain-with-digital-circuit-programmer-with-laptop-machine-learning-artificial-intelligence-digital-brain-artificial-thinking-process-concept-vector-isolated-illustration_335657-2246.jpg?t=st=1651989875~exp=1651990475~hmac=746b200b200851eb27722f6a96e4997666b4ec8e2becac27997258fe3dd9eb54&w=900">
+                    <p class="desc"><b>Occusamus e iusto odio</b></p>
+                    <span>May,05,2022</span>
+                    <p class="desc">"Duils aute irure dolor in reprehenderit it voluptate velit esse cillum dolore eu
+                        fugial nulla .
+                        Excepteur
+                        sint occacat cupidatet non proident , sunt in culpa quit official deserunt mollit id est
+                        labourum"</p>
+                    <p class="desc"><b>Read More...</b></p>
+                </div>
+                <!-- second part -->
+                <div class="phonetext">
+                    <img class="handpho"
+                        src="https://img.freepik.com/free-vector/brain-with-digital-circuit-programmer-with-laptop-machine-learning-artificial-intelligence-digital-brain-artificial-thinking-process-concept-vector-isolated-illustration_335657-2246.jpg?t=st=1651989875~exp=1651990475~hmac=746b200b200851eb27722f6a96e4997666b4ec8e2becac27997258fe3dd9eb54&w=900">
+                    <p><b>Occusamus e iusto odio</b></p>
+                    <span>May,05,2022</span>
+                    <p>"Duils aute irure dolor in reprehenderit it voluptate velit esse cillum dolore eu fugial nulla .
+                        Excepteur
+                        sint occacat cupidatet non proident , sunt in culpa quit official deserunt mollit id est
+                        labourum"</p>
+                    <p><b>Read More...</b></p>
+                </div>
+                <!-- third part -->
+                <div class="phonetext">
+                    <img class="handpho"
+                        src="https://img.freepik.com/free-vector/brain-with-digital-circuit-programmer-with-laptop-machine-learning-artificial-intelligence-digital-brain-artificial-thinking-process-concept-vector-isolated-illustration_335657-2246.jpg?t=st=1651989875~exp=1651990475~hmac=746b200b200851eb27722f6a96e4997666b4ec8e2becac27997258fe3dd9eb54&w=900">
+                    <p><b>Occusamus e iusto odio</b></p>
+                    <span>May,05,2022</span>
+                    <p>"Duils aute irure dolor in reprehenderit it voluptate velit esse cillum dolore eu fugial nulla .
+                        Excepteur
+                        sint occacat cupidatet non proident , sunt in culpa quit official deserunt mollit id est
+                        labourum"</p>
+                    <p><b>Read More...</b></p>
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+
+    </div>
+    <!-- page8 -->
+
+
+    <div id="section8">
+        <div id="conus">
+            <div id="item6">
+                <h2 id="os">
+                    Contact&nbsp;<span style="color:aqua">Us</span>
+                </h2>
+                <p id="p4">we provide high standar clean webside for your business solutions</p>
+            </div>
+        </div>
+        <div id="details">
+            <div class="pheo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="80" viewBox="0 0 36 80">
+                    <text id="_" data-name="" transform="translate(18 69)" fill="#070606" font-size="80"
+                        font-family="FontAwesome">
+                        <tspan x="-17.143" y="0"></tspan>
+                    </text>
+                </svg>
+                <h4>Call&nbsp;Us &nbsp;On</h4>
+                <span>+7408842136</span>
+            </div>
+            <div class="pheo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="92" height="81" viewBox="0 0 92 81">
+                    <text id="_" data-name="" transform="translate(46 69)" fill="#070606" font-size="80"
+                        font-family="FontAwesome">
+                        <tspan x="-45.714" y="0"></tspan>
+                    </text>
+                </svg>
+                <h4>Email&nbsp;Us &nbsp;At</h4>
+                <span>mukeshk92578@gmail.com</span>
+            </div>
+            <div class="pheo">
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="92" height="81" viewBox="0 0 92 81">
+                    <text id="_" data-name="" transform="translate(46 69)" fill="#070606" font-size="80"
+                        font-family="FontAwesome">
+                        <tspan x="-45.714" y="0"></tspan>
+                    </text>
+                </svg>
+
+                <h4>Visit&nbsp;office </h4>
+                <span>99 s.t jomblo Park Pekanbaru 28292<br>Indnesia</span>
+            </div>
+        </div>
+        <!-- for section  -->
+        <div class="frm">
+            <form>
+                <div><input type="text" placeholder="Your Name*">
+                    <input type="email" placeholder="Your Email">
+                </div>
+
+                <br>
+                <div><input type="text" placeholder="your Subject"></div>
+                <br>
+                <div> <textarea name="message" row="10" cols="10">Your Message </textarea></div>
+                <br>
+                <div> <button>Send Message</button></div>
+
+
+            </form>
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+</body>
+
+</html>
